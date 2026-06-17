@@ -33,10 +33,11 @@ export const metadata = {
             }}
           />
           <Script
-            src="https://widgets.leadconnectorhq.com/loader.js"
-            data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-            data-widget-id="668421b21123b130519a8f35"
+            id="ghl-chat-widget"
             strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(){var s=document.createElement('script');s.src='https://widgets.leadconnectorhq.com/loader.js';s.setAttribute('data-resources-url','https://widgets.leadconnectorhq.com/chat-widget/loader.js');s.setAttribute('data-widget-id','668421b21123b130519a8f35');document.head.appendChild(s);})();`,
+            }}
           />
         </head>
         <body>
