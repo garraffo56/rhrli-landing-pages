@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, type ReactNode } from 'react'
 import GclidCapture from '@/components/GclidCapture'
 import GhlForm from '@/components/GhlForm'
 import FaqAccordion from '@/components/FaqAccordion'
@@ -208,18 +208,58 @@ export default function HairRestorationGoogle() {
             Real care. Real support. Real patient-first focus.
           </p>
           <div className="trust-grid">
-            {[
-              { icon: '👤', title: 'Designed for Your Hair Loss Pattern', desc: 'Personalized plans based on your stage, evaluation findings, and goals.' },
-              { icon: '📊', title: 'Visible, Measurable Progress', desc: 'Track changes over time through follow-up assessments.' },
-              { icon: '✨', title: 'Guidance Focused on Healthy-Looking Hair Over Time', desc: 'Recommendations based on proven medical and appearance-supporting approaches.' },
-              { icon: '✅', title: 'Safe Care. Proven Protocols.', desc: 'Strict standards for consistent, high-quality patient care.' },
-              { icon: '📋', title: 'Tailored to You', desc: 'Your plan is based on your evaluation, goals, and long-term hair needs.' },
-              { icon: '⭐', title: 'Trusted by Thousands', desc: 'Real patients. Real reviews. Real experiences.' },
-              { icon: '📋', title: 'Step-by-Step Guidance', desc: 'Know what to expect during your evaluation and throughout your care plan.' },
-              { icon: '✅', title: 'Built for Real-Life Confidence', desc: 'Feel prepared and confident in your everyday life again.' },
-              { icon: '📞', title: 'Support When You Need It Most', desc: 'Real guidance through your evaluation, recommendations, and every step of your journey.' },
-              { icon: '📅', title: 'Start with a Free Consultation', desc: 'Get answers, options, and a personalized plan—no pressure.' },
-            ].map(({ title, desc }, i) => (
+            {([
+              {
+                title: 'Designed for Your Hair Loss Pattern',
+                desc: 'Personalized plans based on your stage, evaluation findings, and goals.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" fill="white"/><path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="white" strokeWidth="1.8" strokeLinecap="round"/></svg>),
+              },
+              {
+                title: 'Visible, Measurable Progress',
+                desc: 'Track changes over time through follow-up assessments.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="white"><rect x="2" y="12" width="4" height="6" rx="0.5"/><rect x="8" y="7" width="4" height="11" rx="0.5"/><rect x="14" y="3" width="4" height="15" rx="0.5"/></svg>),
+              },
+              {
+                title: 'Guidance Focused on Healthy-Looking Hair Over Time',
+                desc: 'Recommendations based on proven medical and appearance-supporting approaches.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="white"><path d="M10 2.5L11.7 8.3L17.5 10L11.7 11.7L10 17.5L8.3 11.7L2.5 10L8.3 8.3L10 2.5Z"/></svg>),
+              },
+              {
+                title: 'Safe Care. Proven Protocols.',
+                desc: 'Strict standards for consistent, high-quality patient care.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L3.5 5V9.5C3.5 13.4 6.3 17 10 17.9C13.7 17 16.5 13.4 16.5 9.5V5L10 2Z" fill="white"/><path d="M7 10l2 2 4-4" stroke="#0D1B35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+              },
+              {
+                title: 'Tailored to You',
+                desc: 'Your plan is based on your evaluation, goals, and long-term hair needs.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 6h14M3 10h14M3 14h10" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>),
+              },
+              {
+                title: 'Trusted by Thousands',
+                desc: 'Real patients. Real reviews. Real experiences.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="white"><path d="M10 2l2.5 6H19l-5.2 3.7 2 6.3L10 14.2 4.2 18l2-6.3L1 8h6.5L10 2Z"/></svg>),
+              },
+              {
+                title: 'Step-by-Step Guidance',
+                desc: 'Know what to expect during your evaluation and throughout your care plan.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 6h14M3 10h14M3 14h10" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>),
+              },
+              {
+                title: 'Built for Real-Life Confidence',
+                desc: 'Feel prepared and confident in your everyday life again.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5"/><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+              },
+              {
+                title: 'Support When You Need It Most',
+                desc: 'Real guidance through your evaluation, recommendations, and every step of your journey.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5.5" y="1.5" width="9" height="17" rx="1.5" stroke="white" strokeWidth="1.5"/><circle cx="10" cy="15.5" r="1" fill="white"/></svg>),
+              },
+              {
+                title: 'Start with a Free Consultation',
+                desc: 'Get answers, options, and a personalized plan—no pressure.',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="14" rx="1.5" stroke="white" strokeWidth="1.5"/><path d="M2 9h16" stroke="white" strokeWidth="1.5"/><path d="M7 2v4M13 2v4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/><circle cx="7" cy="13" r="1" fill="white"/><circle cx="13" cy="13" r="1" fill="white"/></svg>),
+              },
+            ] as Array<{ title: string; desc: string; icon: ReactNode }>).map(({ title, desc, icon }, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
                 <div style={{
                   width: 44,
@@ -230,11 +270,8 @@ export default function HairRestorationGoogle() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '1.1rem',
                 }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
-                  </svg>
+                  {icon}
                 </div>
                 <div>
                   <p style={{ fontWeight: 700, color: '#111', marginBottom: 4, fontSize: '0.95rem' }}>{title}</p>
@@ -442,9 +479,9 @@ export default function HairRestorationGoogle() {
             Real capabilities. Real safety. Real patient-first care.
           </p>
           <div className="practice-cards">
-            {[
+            {([
               {
-                icon: '🏆',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="2" stroke={NAVY} strokeWidth="1.5"/><path d="M6.5 10l2.5 2.5 5-5" stroke={NAVY} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>),
                 title: 'Capabilities',
                 bullets: [
                   'Comprehensive evaluation of hair loss patterns',
@@ -454,7 +491,7 @@ export default function HairRestorationGoogle() {
                 ],
               },
               {
-                icon: '🛡️',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L3.5 5V9.5C3.5 13.4 6.3 17 10 17.9C13.7 17 16.5 13.4 16.5 9.5V5L10 2Z" stroke={NAVY} strokeWidth="1.5"/><path d="M7 10l2 2 4-4" stroke={NAVY} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>),
                 title: 'Safety Standards',
                 bullets: [
                   'Evidence-based approaches reviewed by licensed medical providers',
@@ -463,7 +500,7 @@ export default function HairRestorationGoogle() {
                 ],
               },
               {
-                icon: '🤝',
+                icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 16.5C10 16.5 2.5 12 2.5 7A4 4 0 0110 5a4 4 0 017.5 2C17.5 12 10 16.5 10 16.5z" stroke={NAVY} strokeWidth="1.5"/></svg>),
                 title: 'Patient-First Philosophy',
                 bullets: [
                   'Honest assessments — we provide recommendations only when appropriate',
@@ -471,7 +508,7 @@ export default function HairRestorationGoogle() {
                   'Focus on long-term hair health',
                 ],
               },
-            ].map(({ title, bullets }) => (
+            ] as Array<{ title: string; bullets: string[]; icon: ReactNode }>).map(({ title, bullets, icon }) => (
               <div key={title} style={{
                 background: '#fff',
                 borderRadius: 12,
@@ -490,10 +527,7 @@ export default function HairRestorationGoogle() {
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill={NAVY}>
-                    <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 1.5a6.5 6.5 0 110 13 6.5 6.5 0 010-13z" opacity=".3"/>
-                    <path d="M10 3a7 7 0 100 14A7 7 0 0010 3z"/>
-                  </svg>
+                  {icon}
                 </div>
                 <div style={{ flex: 1 }}>
                   <p style={{ fontWeight: 800, color: '#111', fontSize: '1rem', marginBottom: 14 }}>{title}</p>
