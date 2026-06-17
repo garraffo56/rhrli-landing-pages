@@ -2,6 +2,7 @@ import { Suspense, type ReactNode } from 'react'
 import GclidCapture from '@/components/GclidCapture'
 import GhlForm from '@/components/GhlForm'
 import FaqAccordion from '@/components/FaqAccordion'
+import ReviewCard from '@/components/ReviewCard'
 
 const OG_IMAGE = 'https://vitalitymmg.com/wp-content/uploads/2026/06/rhrli-og-featured.png'
 
@@ -440,44 +441,18 @@ export default function HairRestorationGoogle() {
             Verified patient experiences shared after their visit.
           </p>
           <div className="reviews-grid">
-            {[
-              {
-                name: 'Robert Tessoni',
-                text: 'I recently completed treatment for bladder cancer and noticed significant thinning on the back of my head, so I scheduled a consultation with Dr. Raffi Barsoumian.',
-              },
-              {
-                name: 'Anthony O\'Connell',
-                text: 'I wanted to share my experience after giving myself time to go through the full recovery process. I had my hair restoration procedure in December, and it is now August.',
-              },
-              {
-                name: 'Luke Martin',
-                text: 'Robotic Hair Restoration of Long Island provided a very positive experience from start to finish. The team was reassuring in the weeks leading up to my procedure, and a quick call before the appointment helped put me at ease. On the day of the procedure, everything went exactly as it had been explained beforehand. The staff made sure I was comfortable throughout the day, with regular breaks and clear communication. Lunch was provided, and post-procedure instructions were reviewed thoroughly before I went home with the necessary care materials. After the procedure, any questions or concerns I had were answered promptly and in detail.',
-              },
-            ].map(({ name, text }, i) => (
-              <div key={i} style={{
-                background: '#F4F4F4',
-                borderRadius: 8,
-                padding: '28px 24px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}>
-                <div style={{ color: NAVY, fontSize: '2rem', marginBottom: 8, lineHeight: 1 }}>&ldquo;</div>
-                <div style={{ color: GOLD, fontSize: '1rem', letterSpacing: 3, marginBottom: 16 }}>★★★★★</div>
-                <p style={{ color: '#444', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: 20, flex: 1 }}>
-                  {text}
-                </p>
-                <a href="https://www.google.com/search?q=RHRLI+reviews" target="_blank" rel="noopener noreferrer" style={{
-                  background: BLUE, color: '#fff', fontWeight: 700, fontSize: '0.78rem',
-                  letterSpacing: '0.06em', padding: '10px 24px', borderRadius: 24,
-                  textDecoration: 'none', marginBottom: 16,
-                }}>
-                  READ MORE
-                </a>
-                <p style={{ color: BLUE, fontWeight: 700, fontSize: '0.9rem' }}>{name}</p>
-              </div>
-            ))}
+            <ReviewCard
+              name="Robert Tessoni"
+              text="I recently completed treatment for bladder cancer and noticed significant thinning on the back of my head, so I scheduled a consultation with Dr. Raffi Barsoumian. From the moment I arrived, he was professional, kind, and incredibly honest. He provided a complimentary evaluation and, rather than recommending a service that wasn't appropriate for me, explained that I was not a candidate for the treatments he offers. He then took the time to write down several practical steps I could consider to support my hair health. His honesty, compassion, and genuine desire to help meant a great deal to me. During a time when I felt vulnerable, he made me feel heard and supported. I truly appreciate his integrity and the care he showed throughout my visit."
+            />
+            <ReviewCard
+              name="Anthony O'Connell"
+              text="I wanted to share my experience after giving myself time to go through the full recovery process. I had my hair restoration procedure in December, and it is now August. Over time, I've been very pleased with the progress and feel more confident again. Dr. Barsoumian and his staff were outstanding throughout the entire experience, and the care and communication were excellent from start to finish. Friends and family have noticed the change, and I'm grateful for the professionalism and attention I received. I've been documenting my progress monthly and plan to share another update at the one-year mark."
+            />
+            <ReviewCard
+              name="Luke Martin"
+              text="Robotic Hair Restoration of Long Island provided a very positive experience from start to finish. The team was reassuring in the weeks leading up to my procedure, and a quick call before the appointment helped put me at ease. On the day of the procedure, everything went exactly as it had been explained beforehand. The staff made sure I was comfortable throughout the day, with regular breaks and clear communication. Lunch was provided, and post-procedure instructions were reviewed thoroughly before I went home with the necessary care materials. After the procedure, any questions or concerns I had were answered promptly and in detail. Everyone on the team was attentive and supportive, and I felt well cared for throughout the process. I'm looking forward to continuing to track my progress over the coming months."
+            />
           </div>
         </div>
       </section>
