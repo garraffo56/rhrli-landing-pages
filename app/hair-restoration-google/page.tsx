@@ -9,7 +9,7 @@ const OG_IMAGE = 'https://vitalitymmg.com/wp-content/uploads/2026/06/rhrli-og-fe
 export const metadata = {
   title: 'Medical Evaluation for Hair Loss | RHRLI — Long Island',
   description:
-    'Schedule a doctor-led hair loss evaluation at RHRLI. Discover the cause of your hair loss and learn which treatment options fit your goals.',
+    'Schedule a doctor-led hair loss evaluation at RHRLI. Discover the cause of hair loss and learn which treatment options fit your goals.',
   openGraph: {
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'RHRLI — Robotic Hair Restoration of Long Island' }],
   },
@@ -109,10 +109,10 @@ export default function HairRestorationGoogle() {
             Medical Evaluation for Thinning Hair &amp; Hair Loss Conditions
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1rem', lineHeight: 1.65, marginBottom: 8 }}>
-            Discover the cause of your hair loss and learn which treatment options fit your goals and hair biology.
+            Discover the cause of hair loss and learn which treatment options fit your goals and hair biology.
           </p>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.93rem', lineHeight: 1.6, marginBottom: 32 }}>
-            Request your consultation to discuss your hair loss concerns with a licensed medical professional.
+            Request your consultation to speak with a licensed medical professional about your options.
           </p>
 
           {/* Form card */}
@@ -136,7 +136,7 @@ export default function HairRestorationGoogle() {
       <section style={{ background: '#fff', padding: '72px 40px 0' }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 3vw, 2rem)', fontWeight: 800, color: '#111', marginBottom: 8 }}>
-            Your Hair Loss Plan Is Just Four Steps Away
+            Your Evaluation Is Just Four Steps Away
           </h2>
           <p style={{ textAlign: 'center', color: '#777', marginBottom: 48, fontSize: '0.95rem' }}>
             It&apos;s simpler than you think, and it all starts with a conversation.
@@ -211,7 +211,7 @@ export default function HairRestorationGoogle() {
           <div className="trust-grid">
             {([
               {
-                title: 'Designed for Your Hair Loss Pattern',
+                title: 'Designed for Your Pattern and Stage',
                 desc: 'Personalized plans based on your stage, evaluation findings, and goals.',
                 icon: (<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" fill="white"/><path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="white" strokeWidth="1.8" strokeLinecap="round"/></svg>),
               },
