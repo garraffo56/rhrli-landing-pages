@@ -16,7 +16,7 @@ const BLUE = '#1B3498'
 
 const LOGO = 'https://start.rhrli.com/wp-content/uploads/2025/12/Group-8-1.png'
 const HERO_IMG = 'https://start.rhrli.com/wp-content/uploads/2025/12/Gemini_Generated_Image_njainnnjainnnjai-2-2.png'
-const DR_IMG = 'https://start.rhrli.com/wp-content/uploads/2025/12/image-11.png'
+const DR_IMG = 'https://rhrli.com/wp-content/uploads/2025/06/image-12-1-1.png'
 
 export default function HairRestorationGoogle() {
   return (
@@ -393,12 +393,8 @@ export default function HairRestorationGoogle() {
             Verified patient experiences shared after their visit.
           </p>
           <div className="reviews-grid">
-            {[
-              { name: 'Michael T.', text: 'The evaluation was thorough and the doctor took time to actually explain everything. No pressure, no upsell. Just honest answers about what my hair loss was and what my options were.' },
-              { name: 'Robert S.', text: 'I appreciated that Dr. Barsoumian told me exactly what to expect. He set realistic expectations from the start. The whole process was exactly what he described.' },
-              { name: 'James K.', text: 'Coming in, I didn\'t know what to expect. The team was professional and the evaluation gave me clarity I hadn\'t had in years. I finally understand what\'s happening and what I can do about it.' },
-            ].map(({ name, text }) => (
-              <div key={name} style={{
+            {['Joey P.', 'Joey P.', 'Joey P.'].map((name, i) => (
+              <div key={i} style={{
                 background: '#F4F4F4',
                 borderRadius: 8,
                 padding: '28px 24px',
@@ -409,7 +405,16 @@ export default function HairRestorationGoogle() {
               }}>
                 <div style={{ color: NAVY, fontSize: '2rem', marginBottom: 8, lineHeight: 1 }}>&ldquo;</div>
                 <div style={{ color: GOLD, fontSize: '1rem', letterSpacing: 3, marginBottom: 16 }}>★★★★★</div>
-                <p style={{ color: '#444', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: 20, flex: 1 }}>{text}</p>
+                <p style={{ color: '#444', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: 20, flex: 1 }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et blandit ipsum. Vestibulum sed tincidunt arcu. Proin sed purus eu enim elementum bibendum. Lorem ipsum dolor sit amet, consectet..
+                </p>
+                <a href="https://www.google.com/search?q=RHRLI+reviews" target="_blank" rel="noopener noreferrer" style={{
+                  background: BLUE, color: '#fff', fontWeight: 700, fontSize: '0.78rem',
+                  letterSpacing: '0.06em', padding: '10px 24px', borderRadius: 24,
+                  textDecoration: 'none', marginBottom: 16,
+                }}>
+                  READ MORE
+                </a>
                 <p style={{ color: BLUE, fontWeight: 700, fontSize: '0.9rem' }}>{name}</p>
               </div>
             ))}
