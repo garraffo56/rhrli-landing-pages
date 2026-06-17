@@ -25,7 +25,8 @@ const BLUE = '#1B3498'
 
 const LOGO = 'https://start.rhrli.com/wp-content/uploads/2025/12/Group-8-1.png'
 const HERO_IMG = 'https://start.rhrli.com/wp-content/uploads/2025/12/Gemini_Generated_Image_njainnnjainnnjai-2-2.png'
-const DR_IMG = 'https://rhrli.com/wp-content/uploads/2025/06/image-12-1-1.png'
+const DR_IMG = 'https://start.rhrli.com/wp-content/uploads/2026/02/Rectangle-43.png'
+const FINANCE_IMG = 'https://start.rhrli.com/wp-content/uploads/2025/12/banner-1.jpg'
 
 export default function HairRestorationGoogle() {
   return (
@@ -383,7 +384,7 @@ export default function HairRestorationGoogle() {
               overflow: 'hidden',
             }}>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+                src={FINANCE_IMG}
                 alt="Patient considering hair restoration options"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 12, minHeight: 400 }}
               />
