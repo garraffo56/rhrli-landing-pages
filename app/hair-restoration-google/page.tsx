@@ -440,7 +440,20 @@ export default function HairRestorationGoogle() {
             Verified patient experiences shared after their visit.
           </p>
           <div className="reviews-grid">
-            {['Joey P.', 'Joey P.', 'Joey P.'].map((name, i) => (
+            {[
+              {
+                name: 'Robert Tessoni',
+                text: 'I recently completed treatment for bladder cancer and noticed significant thinning on the back of my head, so I scheduled a consultation with Dr. Raffi Barsoumian.',
+              },
+              {
+                name: 'Anthony O\'Connell',
+                text: 'I wanted to share my experience after giving myself time to go through the full recovery process. I had my hair restoration procedure in December, and it is now August.',
+              },
+              {
+                name: 'Luke Martin',
+                text: 'Robotic Hair Restoration of Long Island provided a very positive experience from start to finish. The team was reassuring in the weeks leading up to my procedure, and a quick call before the appointment helped put me at ease. On the day of the procedure, everything went exactly as it had been explained beforehand. The staff made sure I was comfortable throughout the day, with regular breaks and clear communication. Lunch was provided, and post-procedure instructions were reviewed thoroughly before I went home with the necessary care materials. After the procedure, any questions or concerns I had were answered promptly and in detail.',
+              },
+            ].map(({ name, text }, i) => (
               <div key={i} style={{
                 background: '#F4F4F4',
                 borderRadius: 8,
@@ -453,7 +466,7 @@ export default function HairRestorationGoogle() {
                 <div style={{ color: NAVY, fontSize: '2rem', marginBottom: 8, lineHeight: 1 }}>&ldquo;</div>
                 <div style={{ color: GOLD, fontSize: '1rem', letterSpacing: 3, marginBottom: 16 }}>★★★★★</div>
                 <p style={{ color: '#444', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: 20, flex: 1 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et blandit ipsum. Vestibulum sed tincidunt arcu. Proin sed purus eu enim elementum bibendum. Lorem ipsum dolor sit amet, consectet..
+                  {text}
                 </p>
                 <a href="https://www.google.com/search?q=RHRLI+reviews" target="_blank" rel="noopener noreferrer" style={{
                   background: BLUE, color: '#fff', fontWeight: 700, fontSize: '0.78rem',
