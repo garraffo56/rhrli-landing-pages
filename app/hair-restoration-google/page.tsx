@@ -588,8 +588,8 @@ export default function HairRestorationGoogle() {
         flexWrap: 'wrap',
       }}>
         <span>© 2026 RHRLI</span>
-        <a href="https://rhrli.com/privacy-policy/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>PRIVACY POLICY</a>
-        <a href="https://rhrli.com/hipaa-privacy-policy/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HIPAA POLICY</a>
+        <a href="/privacy-policy/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>PRIVACY POLICY</a>
+        <a href="/cookie-policy/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>COOKIE POLICY</a>
       </footer>
     </>
   )
