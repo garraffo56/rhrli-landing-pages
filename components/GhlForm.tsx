@@ -5,8 +5,10 @@ export default function GhlForm({ formId, height = 620 }: { formId: string; heig
   const [src, setSrc] = useState(`https://api.leadconnectorhq.com/widget/form/${formId}`)
 
   useEffect(() => {
-    const gclid = sessionStorage.getItem('gclid')
+    const urlParams = new URLSearchParams(window.location.search)
+    const gclid = urlParams.get('gclid') || sessionStorage.getItem('gclid')
     if (gclid) {
+      sessionStorage.setItem('gclid', gclid)
       setSrc(`https://api.leadconnectorhq.com/widget/form/${formId}?gclid=${encodeURIComponent(gclid)}`)
     }
   }, [formId])
