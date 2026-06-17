@@ -610,10 +610,7 @@ export default function HairRestorationGoogle() {
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textAlign: 'center', marginBottom: 20 }}>
                 No obligation &nbsp;·&nbsp; Private &nbsp;·&nbsp; Doctor-led
               </p>
-              <GhlForm formId="aoRhRqF9g0OrWyz6y6iY" height={380} />
-              <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', textAlign: 'center', marginTop: 12 }}>
-                🔒 Your information is private and never shared.
-              </p>
+              <GhlForm formId="aoRhRqF9g0OrWyz6y6iY" height={500} />
             </div>
           </div>
         </div>
